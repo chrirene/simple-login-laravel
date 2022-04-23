@@ -16,6 +16,20 @@ class UsersTablesSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
+            'name' => 'Ahmad Muklis',
+            'employee_id' => '2402023004',
+            'birth_date' => '1991-11-03',
+            'gender' => 'Married',
+            'status' => 'Single',
+            'address' => 'Jl.Pengumben no.36a, Jakarta Utara',
+            'email' => 'ahmad@avalogix.id',
+            'role_id' => '4',
+            'phone_no' => '081726198532',
+            'password' =>  Hash::make('ahmad123'),
+            'remember_token' =>  str_random(10),
+        ]);
+
+        DB::table('users')->insert([
             'name' => 'Bryan Sidoarjo',
             'employee_id' => '2402023001',
             'birth_date' => '1995-11-03',
